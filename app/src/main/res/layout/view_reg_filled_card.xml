@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filledCard"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_4sdp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_169sdp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/filledCardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_red"
+        android:padding="@dimen/_16sdp">
+
+        <ImageView
+            android:id="@+id/ivLogoBank"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:adjustViewBounds="true"
+            tools:background="@mipmap/ic_sber"/>
+
+        <ImageView
+            android:id="@+id/ivTypeCard"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            app:layout_constraintTop_toTopOf="@+id/ivLogoBank"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLogoBank"
+            app:layout_constraintRight_toRightOf="@+id/tvNumberCard"
+            android:adjustViewBounds="true"
+            tools:background="@mipmap/ic_visa"/>
+
+        <TextView
+            android:id="@+id/tvNumberCard"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogoBank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/bg_white"
+            tools:text="**** **** **** 7314"
+            android:background="@drawable/background_round_green"
+            android:padding="@dimen/_6sdp"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+        <TextView
+            android:id="@+id/tvMonthValidity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberCard"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/background_round_green"
+            android:textColor="@color/bg_white"
+            android:gravity="center"
+            android:maxLength="2"
+            tools:text="12"
+            android:textSize="@dimen/_13sdp"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <TextView
+            android:id="@+id/divider"
+            app:layout_constraintBottom_toBottomOf="@id/tvMonthValidity"
+            app:layout_constraintLeft_toRightOf="@+id/tvMonthValidity"
+            app:layout_constraintTop_toTopOf="@+id/tvMonthValidity"
+            android:layout_width="16dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:text="/"
+            android:textColor="@color/_26000000"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+
+        <TextView
+            android:id="@+id/tvYearValidity"
+            app:layout_constraintLeft_toRightOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberCard"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/background_round_green"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/bg_white"
+            android:maxLength="2"
+            tools:text="20"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <TextView
+            android:id="@+id/tvCVV"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNumberCard"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/background_round_green"
+            android:textColor="@color/bg_white"
+            android:gravity="center"
+            android:maxLength="3"
+            tools:text="***"
+            android:textSize="@dimen/_13sdp"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

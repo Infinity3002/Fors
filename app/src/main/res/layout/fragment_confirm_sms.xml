@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/fragment_auth_reg_sms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/block"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_80sdp"/>
+
+    <proglife.fora.bank.widgets.arc.ArcToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        app:colors="@array/feed_colors">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <proglife.fora.bank.widgets.arctabs.CurvedTextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/_18sdp"
+                app:text="@string/confirm"
+                app:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10sdp"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/ic_back" />
+
+        </FrameLayout>
+
+    </proglife.fora.bank.widgets.arc.ArcToolbarView>
+
+</android.support.design.widget.CoordinatorLayout>

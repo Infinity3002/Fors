@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proglife.fora.bank.widgets.BottomToolbarView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_bar_height"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+    <ImageButton
+        android:id="@+id/btnFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnCards"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selector_bb_fora"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnFeed"
+        app:layout_constraintRight_toLeftOf="@+id/btnTransfers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selector_bb_cards"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/btnTransfers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnCards"
+        app:layout_constraintRight_toLeftOf="@+id/btnServices"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selector_bb_transfer"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnTransfers"
+        app:layout_constraintRight_toLeftOf="@+id/btnProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selector_bb_services"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnServices"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selector_bb_profile"
+        tools:ignore="ContentDescription" />
+
+</proglife.fora.bank.widgets.BottomToolbarView>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/_12sdp"
+    android:paddingTop="@dimen/_26sdp"
+    android:paddingRight="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_12sdp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitleCardValidityBegins"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Начало действия карты"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCardValidityBegins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="23.06.2018"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvTitleCardExpiration"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Дата окончания действия карты"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleCardValidityBegins" />
+
+
+        <TextView
+            android:id="@+id/tvCardExpiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif"
+            android:text="20.02.2022"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleCardValidityBegins" />
+
+        <TextView
+            android:id="@+id/tvTitleAvailableBalance"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Доступный остаток"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleCardExpiration" />
+
+
+        <TextView
+            android:id="@+id/tvAvailableBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif"
+            android:text="221 RUR"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleCardExpiration" />
+
+        <TextView
+            android:id="@+id/tvTitleAmountBlockedFunds"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Сумма заблокировнных средств"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleAvailableBalance" />
+
+        <TextView
+            android:id="@+id/tvAmountBlockedFunds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleAvailableBalance"
+            android:fontFamily="sans-serif"
+            android:text="1355 RUR"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvTitleDateUpdateBalance"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleAmountBlockedFunds"
+            android:text="Дата и время актуализации остатка"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/tvDateUpdateBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleAmountBlockedFunds"
+            android:text="Вчера, 16:00"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"/>
+
+
+        <TextView
+            android:id="@+id/tvTitleTariff"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleDateUpdateBalance"
+            android:text="Тариф"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/tvTariff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="sans-serif"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleDateUpdateBalance"
+            android:text="Классика"
+            android:textColor="@color/_2f2f2f"
+            android:textSize="@dimen/_14sdp"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

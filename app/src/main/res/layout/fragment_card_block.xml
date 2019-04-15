@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <proglife.fora.bank.widgets.arc.ArcToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        android:transitionName="@string/transition_arc"
+        app:colors="@array/feed_colors"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_back" />
+
+            <proglife.fora.bank.widgets.arctabs.CurvedTextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/_18sdp"
+                app:text="@string/card.block"
+                app:textColor="@android:color/white" />
+
+        </FrameLayout>
+
+    </proglife.fora.bank.widgets.arc.ArcToolbarView>
+
+    <FrameLayout
+        android:id="@+id/cardFrame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <include layout="@layout/li_card_for_list" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/card.block.reason"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintBottom_toTopOf="@+id/spReasons"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardFrame" />
+
+    <Spinner
+        android:id="@+id/spReasons"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/bg_spinner_grey"
+        android:clickable="false"
+        android:entries="@array/spinner_block_reasons"
+        android:focusable="false"
+        android:paddingStart="@dimen/_18sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/ivSpSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@id/spReasons"
+        app:layout_constraintStart_toStartOf="@id/spReasons"
+        app:layout_constraintTop_toTopOf="@+id/spReasons"
+        app:srcCompat="@drawable/ic_spinner_arrows" />
+
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/selector_button_outline_red"
+        android:stateListAnimator="@null"
+        android:text="@string/card.block_action"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spReasons" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proglife.fora.bank.widgets.CollapsedLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/ivBackground"
+        android:background="@color/_d42e2c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <proglife.fora.bank.widgets.CircleWave
+        android:id="@+id/circleWave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <proglife.fora.bank.widgets.arctabs.ArcLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:arc_cropDirection="cropOutside"
+        app:arc_height="@dimen/_20sdp"
+        app:arc_position="top"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_white"
+            android:textColor="#000000"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Приложите палец к сканеру"/>
+    </proglife.fora.bank.widgets.arctabs.ArcLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivTouch"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        android:tint="@android:color/white"
+        app:srcCompat="@drawable/ic_touchid" />
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/avd_check"
+        app:layout_constraintLeft_toLeftOf="@id/ivTouch"
+        app:layout_constraintRight_toRightOf="@+id/ivTouch"
+        app:layout_constraintTop_toTopOf="@+id/ivTouch"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTouch"/>
+
+</proglife.fora.bank.widgets.CollapsedLayout>

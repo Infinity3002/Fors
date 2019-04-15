@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_3sdp" />
+            <solid android:color="@color/_f7f7f7" />
+        </shape>
+    </item>
+    <item android:maxLevel="1">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_3sdp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="#EC433D" />
+        </shape>
+    </item>
+    <item android:maxLevel="2">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_3sdp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="#EA4442" />
+        </shape>
+    </item>
+    <item android:maxLevel="3">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_3sdp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="#F1AE72" />
+        </shape>
+    </item>
+    <item android:maxLevel="4">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_3sdp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="#22C183" />
+        </shape>
+    </item>
+</level-list>

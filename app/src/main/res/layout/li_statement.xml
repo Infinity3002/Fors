@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rvContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/_d8d8d8"/>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="@dimen/_14sdp">
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/_33sdp"
+            android:layout_height="@dimen/_33sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@mipmap/tmp_ic_metro"/>
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="@dimen/_6sdp"
+            app:layout_constraintLeft_toRightOf="@+id/ivLogo"
+            android:text="METRO Store 1019"/>
+
+
+        <TextView
+            android:id="@+id/tvSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="@dimen/_6sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="-2964,80"/>
+
+
+        <TextView
+            android:id="@+id/tvBonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_b4b4b4"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="@dimen/_6sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLogo"
+            android:text="+65 бонусов"/>
+
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_b4b4b4"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="@dimen/_6sdp"
+            app:layout_constraintLeft_toRightOf="@+id/ivLogo"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLogo"
+            android:text="Продуктовый магазин"/>
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    
+    <LinearLayout
+        android:id="@+id/wrap"
+        android:layout_width="0dp"
+        android:padding="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clContainer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvName1"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@android:color/black"
+                android:text="Тоrк Полотенца бумажные ZZ-сложение листа 5 х 250 л"/>
+
+            <TextView
+                android:id="@+id/tvCount1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@android:color/black"
+                android:text="x24"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@android:color/black"
+                android:text="Кроненбург Бланк, упаковка, 20 бутылок"/>
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@android:color/black"
+                android:text="x10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_requst_success"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivType"
+        app:srcCompat="@drawable/ic_request_success"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Перевод "
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/tvTypeRequest"
+        app:layout_constraintStart_toEndOf="@id/ivType"
+        app:layout_constraintTop_toTopOf="@id/ivType"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvTypeRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="sans-serif-light"
+        android:text="отправлен"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/ivType"
+        app:layout_constraintStart_toEndOf="@id/ivType"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+</android.support.constraint.ConstraintLayout>

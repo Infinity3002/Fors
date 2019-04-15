@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp">
+
+    <proglife.fora.bank.widgets.RoundedImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/ivLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Капитализация средств"
+        tools:textSize="@dimen/_13sdp"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/_9b9b9b"
+        app:layout_constraintLeft_toLeftOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="Внутрибанковские операции"
+        tools:textSize="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="5560,15 Р"/>
+
+</android.support.constraint.ConstraintLayout>

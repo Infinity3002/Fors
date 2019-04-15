@@ -1,0 +1,44 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="231dp"
+    android:height="231dp"
+    android:viewportWidth="231"
+    android:viewportHeight="231">
+    <group
+        android:name="circle"
+        android:pivotX="118"
+        android:pivotY="122">
+        <path
+            android:name="path_16"
+            android:pathData="M 168 95 C 166.798 92.917 165.461 90.914 164 89"
+            android:fillColor="#00000000"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"/>
+        <path
+            android:name="path_17"
+            android:pathData="M 118 65 C 92.733 65 71.306 81.44 63.832 104.208 C 61.994 109.806 61 115.787 61 122 C 61 141.978 71.278 159.556 86.835 169.733 C 95.792 175.593 106.498 179 118 179 C 149.48 179 175 153.48 175 122"
+            android:fillColor="#00000000"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"/>
+        <path
+            android:name="path_18"
+            android:pathData="M 160 84 C 153.52 76.73 145.289 71.157 136 68"
+            android:fillColor="#00000000"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"/>
+    </group>
+    <group android:name="check_mark">
+        <path
+            android:name="path_19"
+            android:pathData="M 90 121.989 L 114.756 144 L 145 100"
+            android:fillColor="#00000000"
+            android:strokeColor="#ffffff"
+            android:strokeWidth="6"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"/>
+    </group>
+</vector>

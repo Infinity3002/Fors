@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_65sdp"
+    android:paddingStart="@dimen/_19sdp">
+
+    <proglife.fora.bank.widgets.RoundedImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/red_circle"
+        android:padding="@dimen/_1sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvCount"
+        app:layout_constraintStart_toEndOf="@id/ivPhoto"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Павел Герасимчук"/>
+
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:maxWidth="@dimen/_240sdp"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/_20sdp"
+        android:textColor="@color/_161616"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintStart_toEndOf="@id/ivPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Ffffffffffffffffffffffffffffffffffffff"/>
+
+    <ImageView
+        android:id="@+id/ivRead"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:src="@drawable/ic_check_message"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tvMessage"
+        app:layout_constraintEnd_toEndOf="@id/tvMessage"
+        app:layout_constraintTop_toTopOf="@id/tvMessage"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="@dimen/_21sdp"
+        android:layout_height="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/red_circle"
+        android:gravity="center"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvDate"
+        app:layout_constraintEnd_toStartOf="@id/tvDate"
+        tools:text="9+"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/_8E8E93"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivPhoto"
+        tools:text="14:00"/>
+
+    <TextView
+        android:id="@+id/btnDelete"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="match_parent"
+        android:background="@color/_d42e2c"
+        android:gravity="center"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:text="@string/all_delete"
+        android:textColor="@android:color/white"
+        android:translationX="@dimen/_90sdp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proglife.fora.bank.widgets.CollapsedLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/bg_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <proglife.fora.bank.widgets.arctabs.ArcLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        app:arc_cropDirection="cropInside"
+        app:arc_height="@dimen/_20sdp"
+        app:arc_position="bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <proglife.fora.bank.test.GradientLayout
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:colors="@array/reg_colors"/>
+
+        <proglife.fora.bank.widgets.arctabs.CurvedTextView
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:text="@string/registration"
+            android:layout_marginBottom="@dimen/_18sdp"
+            app:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@null"
+            android:layout_gravity="start"/>
+
+    </proglife.fora.bank.widgets.arctabs.ArcLayout>
+
+    <LinearLayout
+        android:id="@+id/llTabs"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:background="@drawable/ll_stroke_round_backround"
+        android:layout_marginTop="@dimen/_24sdp">
+
+        <Button
+            android:id="@+id/btnCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_weight="1.0"
+            android:textColor="@drawable/selector_button_text"
+            android:background="@drawable/selector_left_button_tab"
+            android:text="Карта"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/_dcdcdc" />
+
+        <Button
+            android:id="@+id/btnScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_weight="1.0"
+            android:textColor="@drawable/selector_button_text"
+            android:background="@drawable/selector_center_button_tab"
+            android:text="Счет"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/_dcdcdc" />
+
+        <Button
+            android:id="@+id/btnContract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textAllCaps="false"
+            android:textColor="@drawable/selector_button_text"
+            android:background="@drawable/selector_right_button_tab"
+            android:text="Договор"/>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bg_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llTabs">
+    </android.support.v4.view.ViewPager>
+
+
+</proglife.fora.bank.widgets.CollapsedLayout>

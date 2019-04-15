@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <requestFocus />
+
+    <proglife.fora.bank.widgets.arctabs.ArcLayout
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_90sdp"
+        app:arc_cropDirection="cropInside"
+        app:arc_height="@dimen/_20sdp"
+        app:arc_position="top"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <proglife.fora.bank.test.GradientLayout
+            android:id="@+id/gradientBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:colors="@array/reg_colors" />
+
+    </proglife.fora.bank.widgets.arctabs.ArcLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:id="@+id/clContent">
+
+        <Spinner
+            android:id="@+id/spinnerCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_65sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@null"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/li_spiner_card" />
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:tint="@color/_979797"
+            app:layout_constraintBottom_toBottomOf="@id/spinnerCard"
+            app:layout_constraintStart_toStartOf="@id/spinnerCard"
+            app:layout_constraintTop_toTopOf="@+id/spinnerCard"
+            app:srcCompat="@drawable/ic_spinner_arrows"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/spinnerCard" />
+
+        <proglife.fora.bank.widgets.RoundedImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@color/button_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Иван Петров"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPhoto"
+            app:layout_constraintStart_toEndOf="@id/ivPhoto"
+            app:layout_constraintTop_toTopOf="@+id/ivPhoto" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Назначение платежа"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottom" />
+
+    <Spinner
+        android:id="@+id/spSort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/bg_spinner_grey_transparent"
+        android:clickable="false"
+        android:entries="@array/spinner_chat"
+        android:focusable="false"
+        style="@style/mySpinnerItemStyle"
+        android:theme="@style/mySpinnerItemStyle"
+        android:paddingStart="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+    <ImageView
+        android:id="@+id/ivSpSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/spSort"
+        app:layout_constraintStart_toStartOf="@id/spSort"
+        app:layout_constraintTop_toTopOf="@+id/spSort"
+        app:srcCompat="@drawable/ic_spinner_arrows" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:background="@drawable/selector_edittext_chat_request"
+        android:gravity="center"
+        android:inputType="number"
+        android:lines="1"
+        android:paddingTop="@dimen/_9sdp"
+        android:paddingBottom="@dimen/_9sdp"
+        android:textColor="@color/focus_amount_black_to_white"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spSort" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Комиссия (3%)"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/etAmount"
+        app:layout_constraintStart_toStartOf="@id/etAmount"
+        app:layout_constraintTop_toBottomOf="@+id/etAmount" />
+
+    <Button
+        android:id="@+id/btnSend"
+        style="@style/Button.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:text="Отправить"
+        android:alpha="0"
+        android:textColor="@color/button_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmount" />
+
+    <proglife.fora.bank.widgets.arctabs.ArcLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        app:arc_cropDirection="cropInside"
+        app:arc_height="@dimen/_20sdp"
+        app:arc_position="bottom"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <proglife.fora.bank.test.GradientLayout
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:colors="@array/reg_colors" />
+
+        <proglife.fora.bank.widgets.arctabs.CurvedTextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/_18sdp"
+            app:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10sdp"
+            android:stateListAnimator="@null"
+            app:srcCompat="@drawable/ic_back" />
+
+    </proglife.fora.bank.widgets.arctabs.ArcLayout>
+</android.support.constraint.ConstraintLayout>

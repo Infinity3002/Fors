@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <proglife.fora.bank.widgets.RoundedImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/tmp_ic_vkusa"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/ivLogo"
+        app:layout_constraintTop_toTopOf="@id/ivLogo"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@android:color/black"
+        android:text="Моя альфа" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toEndOf="@id/ivLogo"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textColor="@color/_9b9b9b"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="sans-serif-light"
+        android:text="Последний: 5 июля" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/ivLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="4500 ₽"
+        app:layout_constraintBottom_toBottomOf="@id/ivLogo" />
+
+</android.support.constraint.ConstraintLayout>

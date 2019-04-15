@@ -1,0 +1,158 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name">Fora-Online</string>
+    <string name="auth.description">Для доступа к счетам и картам\nзарегистрируйтесь или войдите</string>
+    <string name="auth.reg">Регистрация</string>
+    <string name="auth.login">Вход</string>
+    <string name="card.balance">%.2f &#8381;</string>
+
+    <!--Payments-->
+    <string name="title_translations">Переводы</string>
+    <string name="between_your_accounts">Между своими счетами</string>
+    <string name="client_bank">Клиенту банка</string>
+    <string name="other_bank">В другой банк на счет или карту</string>
+    <string name="request_money_to_account">Запросить деньги на счет</string>
+    <string name="electronic_wallet">На электронный кошелек</string>
+    <string name="charity">Благотворительность</string>
+    <string name="title_payment_services">Оплата услуг</string>
+    <string name="mobile">Мобильная связь</string>
+    <string name="mulct_or_taxes">Штрафы, налоги и государственные услуги</string>
+    <string name="public_service">Коммунальные услуги ЖКХ</string>
+    <string name="internet">Интернет, телевидение, телефоны</string>
+    <string name="social_or_game">Социальные сети, онлайн игры</string>
+    <string name="security">Охранные системы</string>
+    <string name="transport_cart">Транспортные карты</string>
+    <string name="online_shop">Сетевой маркетинг</string>
+    <string name="other">Прочее</string>
+
+    <!--Settings-->
+    <string name="select_news">Выберите, что вы хотите видеть в ленте</string>
+    <string name="title_app">Предложения</string>
+    <string name="title_info">Инфо</string>
+    <string name="title_current">Текущее</string>
+    <string name="title_upcoming">Предстоящее</string>
+    <string name="checks">Счета</string>
+    <string name="deposits">Вклады</string>
+    <string name="card">Карты</string>
+    <string name="debenture_stock">Акции, облигации</string>
+    <string name="сells">Ячейки</string>
+    <string name="payments_and_transfers">Платежи и переводы</string>
+    <string name="credits">Кредиты</string>
+    <string name="services">Услуги и сервисы</string>
+    <string name="taxi">Такси</string>
+    <string name="movie_tickets">Билеты в кино</string>
+    <string name="promotion_stores">Акции в магазинах</string>
+    <string name="reservation_hotel">Бронирование гостиниц</string>
+    <string name="air_tickets">Ж\Д и авиабилеты</string>
+    <string name="insurance">Страховка</string>
+    <string name="news_bank">Новости банка</string>
+    <string name="change_work">Изменения граф. работы</string>
+    <string name="recommendations">Рекомендации</string>
+    <string name="exchange_rates">Курс валют</string>
+    <string name="new_app">Новое в приложении</string>
+    <string name="payments">Платежи и переводы</string>
+    <string name="registration">Регистрация</string>
+    <string name="feed_current">Текущее</string>
+    <string name="feed_upcoming">Предстоящее</string>
+    <string name="feed_news">Новости</string>
+    <string name="feed_info">Информация</string>
+    <string name="feed_settings">Настройки</string>
+
+    <!--Services-->
+    <string name="title_service_foraback">Услуги ФораБанка</string>
+    <string name="title_partner_services">Партнерские сервисы</string>
+    <string name="departments">Отделения</string>
+    <string name="cash_machine">Банкоматы</string>
+    <string name="payment_devices">Платежные устройства</string>
+    <string name="view_tv">Просмотр ТВ</string>
+    <string name="discounts_shops">Скидки в магазинах</string>
+    <string name="hint_search">Банкомат, пополнение</string>
+    <string name="reg_title_security">Выберите способы\nдля входа в приложение</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="auth_reg_complete">Теперь вы можете использовать\nприложение</string>
+    <string name="begin">Начать</string>
+
+    <!--Cards-->
+    <string name="refill_deposit">Пополнить</string>
+    <string name="withdraw_funds">Снять средства</string>
+    <string name="share_details">Поделиться реквизитами</string>
+    <string name="link_map">Привязать карту</string>
+    <string name="extend_validity_period">Продлить срок действия</string>
+    <string name="close_deposit">Закрыть вклад</string>
+
+    <string name="add_card">Добавить карту</string>
+    <string name="testing">Филиал в г. Ростов-на-Дону \nРостов-на-Дону\nулица Пушкинская дом 117\nпн.-пт.: 09:00-20:00, сб.: 10:00-16:00\n8 (863) 240-36-46</string>
+    <string name="auth_reg_create_password">Придумайте пароль</string>
+    <string name="auth_reg_password_weak">Ненадежный</string>
+    <string name="auth_reg_password_medium">Средний</string>
+    <string name="auth_reg_password_strong">Надежный</string>
+    <string name="transition_arc">TRANSITION_ARC</string>
+
+    <string-array name="spinner_cards">
+        <item>По сумме остатка</item>
+        <item>По наименованию</item>
+        <item>По дате выпуска</item>
+        <item>По Дате окончания</item>
+    </string-array>
+
+    <string-array name="spinner_block_reasons">
+        <item>Карта утеряна</item>
+        <item>Карта украдена</item>
+        <item>Компрометация карты</item>
+        <item>Карта изъята банкоматом</item>
+    </string-array>
+
+    <!--CHATS-->
+    <string name="chats_title">Сообщения</string>
+    <string name="card_control">Управление</string>
+    <string name="card_statement">Выписка</string>
+    <string name="card_info">О карте</string>
+    <string name="card.statement.search_hint">Поиск</string>
+
+    <string-array name="spinner_chat">
+        <item>За завтраки</item>
+    </string-array>
+
+
+    <!-- SETTINGS -->
+    <string name="profile.settings">Настройки</string>
+    <string name="profile.message">Сообщения</string>
+    <string name="profile.exit">Выход</string>
+    <string name="all_delete">Удалить</string>
+    <string name="bill.send">Отправить</string>
+    <string name="bill.refill">Пополнить</string>
+    <string name="bonds.search_hint">Название, отрасли</string>
+    <string name="bonds.buy">Купить облигации</string>
+    <string name="all_percent">%.2f%%</string>
+    <string name="finance_history.search_hint">Магазины, люди, суммы, даты</string>
+    <string name="bill_control">Управление</string>
+    <string name="bill_statement">Выписка</string>
+    <string name="bill_info">О вкладе</string>
+    <string name="transfer_success">Перевод успешно совершен</string>
+    <string name="transfer_add_template">Создать шаблон</string>
+    <string name="bills_back">Вернуться к счетам</string>
+    <string name="transation_request">Перевод</string>
+    <string name="transfer_to_client">Перевод клиенту банка</string>
+    <string name="finance_history_distribute">Распеределить в категорию</string>
+    <string name="finance_history_create_template">Сохранить как шаблон</string>
+    <string name="finance_history_repeat_transfer">Повторить перевод</string>
+    <string name="finance_history_shared_link">Поделиться ссылкой</string>
+    <string name="finance_history_remove_item">Удалить из истории</string>
+    <string name="auth.reg.agreement">Я прочитал(а)</string>
+    <string name="auth.reg.agreement_link_part">условия банка</string>
+    <string name="all.continue">Продолжить</string>
+    <string name="auth.reg.repeat_password">Повторите пароль</string>
+    <string name="auth.reg.create_login">Придумайте логин</string>
+    <string name="auth.reg.create_login_and_password">Придумайте логин и пароль</string>
+    <string name="chats.search_hint">Люди</string>
+    <string name="title_template">Шаблоны</string>
+    <string name="statistic.debit">Доходы</string>
+    <string name="statistic.credit">Расходы</string>
+    <string name="card.block">Блокировка карты</string>
+    <string name="card.block.reason">Причина блокировки</string>
+    <string name="card.all_actions">Все действия</string>
+    <string name="card.block_action">Заблокировать карту</string>
+    <string name="auth.reg.create_phone">Ваш номер телефона</string>
+
+    <string name="error_field_empty">Незаполненое поле</string>
+    <string name="confirm">Подтверждение</string>
+</resources>

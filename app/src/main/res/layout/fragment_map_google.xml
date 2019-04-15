@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/bg_map_search_round"
+        android:drawableStart="@drawable/ic_search"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_search"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="#000001"
+        android:elevation="@dimen/_2sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColorHint="#c6c6c6"
+        android:textCursorDrawable="@drawable/color_cursor"
+        app:layout_constraintEnd_toStartOf="@id/btnList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnList"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:background="@drawable/bg_map_search_round"
+        android:clickable="true"
+        android:foreground="?actionBarItemBackground"
+        android:padding="@dimen/_8sdp"
+        android:elevation="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@id/etSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etSearch"
+        app:srcCompat="@drawable/ic_list"/>
+
+
+    <ImageButton
+        android:id="@+id/btnRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_62sdp"
+        android:background="@drawable/bg_white_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_route"/>
+
+    <ImageButton
+        android:id="@+id/btnMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/bg_white_circle"
+        app:layout_constraintBottom_toTopOf="@+id/btnRoute"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_my_location"/>
+
+
+    <include layout="@layout/bs_map_layout"/>
+
+
+    <proglife.fora.bank.widgets.arc.ArcToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        app:colors="@array/services_colors"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <proglife.fora.bank.widgets.arctabs.CurvedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/_18sdp"
+                app:text="@string/services"
+                app:textColor="@android:color/white"/>
+
+
+        </FrameLayout>
+
+
+    </proglife.fora.bank.widgets.arc.ArcToolbarView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proglife.fora.bank.widgets.arc.ArcBackgroundView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:colors="@array/history_colors">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_24sdp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_24sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/ic_monets"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/transfer_to_client"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivLogo"/>
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_24sdp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                        tools:text="-5000 Р"/>
+
+                    <ImageButton
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/_10sdp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_back"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <proglife.fora.bank.widgets.SauronLayout
+                    android:id="@+id/sauronLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="@dimen/_16sdp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingTop="@dimen/arc_height"
+                        android:paddingBottom="@dimen/arc_height">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/contentLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_12sdp"
+                            tools:alpha="1">
+
+                            <TextView
+                                android:id="@+id/tv1Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Дата совершения\nперевода"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+                            <TextView
+                                android:id="@+id/tv1Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="05.08.2017"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+                            <TextView
+                                android:id="@+id/tv2Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Назначение"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv1Label"/>
+
+                            <TextView
+                                android:id="@+id/tv2Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:text="За тренировки"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv1Label"/>
+
+                            <TextView
+                                android:id="@+id/tv3Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Получатель"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv2Label"/>
+
+                            <TextView
+                                android:id="@+id/tv3Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:text="Гер*****к П.В."
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv2Label"/>
+
+                            <TextView
+                                android:id="@+id/tv4Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Статус перевода"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv3Label"/>
+
+                            <TextView
+                                android:id="@+id/tv4Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:text="Совершен"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv3Label"/>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </FrameLayout>
+
+                </proglife.fora.bank.widgets.SauronLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sauronLayout"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</proglife.fora.bank.widgets.arc.ArcBackgroundView>

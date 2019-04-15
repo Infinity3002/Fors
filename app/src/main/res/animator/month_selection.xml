@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_activated="true">
+        <objectAnimator
+            android:propertyName="translationY"
+            android:valueTo="@dimen/_minus10sdp"
+            android:duration="@android:integer/config_shortAnimTime"
+            android:interpolator="@android:interpolator/fast_out_slow_in" />
+    </item>
+
+    <item>
+        <objectAnimator
+            android:propertyName="translationY"
+            android:valueTo="0dp"
+            android:duration="@android:integer/config_shortAnimTime"
+            android:interpolator="@android:interpolator/fast_out_slow_in" />
+    </item>
+</selector>

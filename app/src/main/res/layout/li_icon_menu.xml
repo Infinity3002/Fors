@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingStart="@dimen/_15sdp"
+    android:background="?selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_17sdp"
+        android:paddingBottom="@dimen/_17sdp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000001"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        tools:ignore="RtlSymmetry"
+        tools:text="asdasd" />
+</android.support.constraint.ConstraintLayout>

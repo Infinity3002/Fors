@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbar_item_unselected">#bbffffff</color>
+    <color name="toolbar_item_selected">#ffffff</color>
+    <color name="button_red">#EA4442</color>
+    <color name="button_white">#ffffff</color>
+
+    <color name="c_d62b2b">#d62b2b</color>
+    <color name="c_f0a06c">#f0a06c</color>
+
+    <color name="_dcdcdc">#dcdcdc</color>
+    <color name="_f4f4f6">#f4f4f6</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="_9b9b9b">#9b9b9b</color>
+    <color name="_232323">#232323</color>
+    <color name="_161616">#161616</color>
+    <color name="_56565F">#56565F</color>
+    <color name="_8E8E93">#8E8E93</color>
+    <color name="_BFBFBF">#BFBFBF</color>
+    <color name="_f7f7f7">#f7f7f7</color>
+    <color name="_f4f4f4">#f4f4f4</color>
+    <color name="_22c183">#22c183</color>
+    <color name="_d42e2c">#d42e2c</color>
+    <color name="_ea4442">#ea4442</color>
+    <color name="_E84647">#E84647</color>
+    <color name="_f6f6f6">#f6f6f6</color>
+    <color name="_D8D8D8">#D8D8D8</color>
+
+    <color name="divider_color">#88D8D8D8</color>
+    <color name="toolbar_text_color">#ffffff</color>
+    <color name="_999999">#999999</color>
+    <color name="_979797">#979797</color>
+    <color name="_3CD7B8">#3CD7B8</color>
+    <color name="_26000000">#26000000</color>
+    <color name="_2f2f2f">#2F2F2F</color>
+    <color name="_f1af73">#f1af73</color>
+    <color name="_000001">#000001</color>
+    <color name="_c6c6c6">#c6c6c6</color>
+    <color name="_b4b4b4">#b4b4b4</color>
+    <color name="_d8d8d8">#d8d8d8</color>
+    <color name="_f1b074">#F1B074</color>
+    <color name="_ed8353">#ED8353</color>
+    <color name="_ed4949">#ED4949</color>
+    <color name="_4e236e">#4E236E</color>
+    <color name="_af3457">#AF3457</color>
+    <color name="_ba3753">#BA3753</color>
+    <color name="_ec433D">#EC433D</color>
+    <color name="_1ABC9C">#1ABC9C</color>
+
+
+</resources>

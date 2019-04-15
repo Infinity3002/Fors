@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"  tools:ignore="ExtraTranslation">
+    <string-array name="feed_colors">
+        <item>#ED4949</item>
+        <item>#F1B074</item>
+    </string-array>
+
+    <string-array name="payments_colors">
+        <item>#4E236E</item>
+        <item>#AF3457</item>
+    </string-array>
+
+    <string-array name="services_colors">
+        <item>#A82222</item>
+        <item>#321E1E</item>
+    </string-array>
+
+    <string-array name="reg_colors">
+        <item>#ED4949</item>
+        <item>#F1B074</item>
+        <item>#ED8353</item>
+        <item>#ED4949</item>
+        <item>#4E236E</item>
+    </string-array>
+
+    <string-array name="history_colors">
+        <item>#EB413C</item>
+        <item>#AF3457</item>
+    </string-array>
+
+    <array name="gradient_colors">
+        <item>#F1B074</item>
+        <item>#ED8353</item>
+        <item>#ED4949</item>
+        <item>#4E236E</item>
+        <item>#AF3457</item>
+        <item>#752A66</item>
+        <item>#452B6D</item>
+        <item>#752A66</item>
+        <item>#A82222</item>
+        <item>#321E1E</item>
+    </array>
+
+    <string-array name="profile_colors">
+        <item>#C83D4E</item>
+        <item>#EA4442</item>
+    </string-array>
+
+    <string-array name="red_string_colors">
+        <item>#C23A51</item>
+        <item>#EA4442</item>
+    </string-array>
+
+    <string-array name="cyan_colors">
+        <item>#1ABC9C</item>
+        <item>#1ABC9C</item>
+    </string-array>
+
+    <string-array name="blue">
+        <item>#185ca8</item>
+        <item>#185ca8</item>
+    </string-array>
+
+</resources>

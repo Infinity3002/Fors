@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <proglife.fora.bank.widgets.SwipeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvName1"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Тоrк Полотенца бумажные ZZ-сложение листа 5 х 250 л"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvCount1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:text="x24"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:text="4500,00 ₽"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#1abb9b"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="Запросить:"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/ivPhoto1"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/ivPhoto2"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/ivPhoto3"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp" />
+        </LinearLayout>
+    </proglife.fora.bank.widgets.SwipeLayout>
+</android.support.constraint.ConstraintLayout>

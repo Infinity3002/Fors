@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clDateContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/_000001"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:text="Вчера, 20 июня"/>
+
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/_000001"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:text="-16 567,07 RUR"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

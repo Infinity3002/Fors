@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:background="@android:color/white">
+
+    <requestFocus/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/arc_height"
+        app:layout_behavior="@string/arcbar_scrolling_view_behavior"/>
+
+    <proglife.fora.bank.widgets.arc.ArcToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        app:colors="@array/feed_colors">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <proglife.fora.bank.widgets.arctabs.CurvedTextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/_18sdp"
+                app:text="@string/chats_title"
+                app:textColor="@android:color/white"/>
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10sdp"
+                android:stateListAnimator="@null"
+                android:transitionName="btn_back"
+                app:srcCompat="@drawable/ic_back"/>
+
+            <ImageButton
+                android:id="@+id/btnAddChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10sdp"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/ic_chat_add"/>
+
+        </FrameLayout>
+
+    </proglife.fora.bank.widgets.arc.ArcToolbarView>
+</android.support.design.widget.CoordinatorLayout>

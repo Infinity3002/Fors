@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/frame_0"
+        android:drawable="@drawable/vd_ok_empty"
+        app:state_two="false"
+        app:state_three="false"/>
+
+    <item android:id="@+id/frame_3"
+          android:drawable="@drawable/vd_ok_mark"
+          app:state_two="true"
+          app:state_three="true"/>
+
+    <item android:id="@+id/frame_1"
+          android:drawable="@drawable/vd_ok_complete"
+          app:state_two="true"/>
+
+    <item android:id="@+id/frame_2"
+          android:drawable="@drawable/vd_ok_empty"
+          app:state_three="true"/>
+
+    <transition
+        android:drawable="@drawable/avd_empty_complete"
+        android:fromId="@id/frame_0"
+        android:toId="@id/frame_1"/>
+
+    <transition
+        android:fromId="@id/frame_1"
+        android:toId="@id/frame_2"
+        android:drawable="@drawable/avd_complete_end"/>
+
+    <transition
+        android:fromId="@id/frame_1"
+        android:toId="@id/frame_3"
+        android:drawable="@drawable/avd_complete_mark"/>
+
+</animated-selector>

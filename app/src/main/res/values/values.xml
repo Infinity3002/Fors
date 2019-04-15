@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="arcbar_scrolling_view_behavior">proglife.fora.bank.widgets.PerfectScrollingViewBehavior</string>
+</resources>

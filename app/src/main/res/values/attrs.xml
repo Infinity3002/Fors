@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colors" format="reference" />
+
+    <declare-styleable name="ArcLayout">
+        <attr name="arc_height" format="dimension" />
+        <attr name="arc_position">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+        <attr name="arc_cropDirection" format="enum">
+            <enum name="cropInside" value="0" />
+            <enum name="cropOutside" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="GradientLayout">
+        <attr name="colors"/>
+    </declare-styleable>
+    <declare-styleable name="CurvedTextView">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="VectorState">
+        <attr name="state_one" format="boolean"/>
+        <attr name="state_two" format="boolean"/>
+        <attr name="state_three" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="foreground"/>
+    </declare-styleable>
+    <declare-styleable name="ArcBackgroundView">
+        <attr name="colors"/>
+    </declare-styleable>
+    <declare-styleable name="ArcToolbarView">
+        <attr name="colors"/>
+        <attr name="fullScreen" format="boolean"/>
+    </declare-styleable>
+</resources>

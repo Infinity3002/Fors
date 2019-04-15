@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proglife.fora.bank.widgets.CollapsedLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/office_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:background="@drawable/gradient_red"
+        android:transitionName="toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logoText"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvAuthDescription"
+        app:layout_constraintLeft_toRightOf="@+id/logoImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@mipmap/logo_text" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@id/logoText"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/logoText"
+        app:layout_constraintTop_toTopOf="@id/logoText"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvAuthDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/auth.description"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoText" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:text="@string/auth.reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthDescription"
+        android:textColor="@color/button_red"
+        style="@style/Button.White"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:background="@drawable/button_outlined_white"
+        android:stateListAnimator="@null"
+        android:text="@string/auth.login"
+        android:textAllCaps="false"
+        android:textColor="@color/button_white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
+</proglife.fora.bank.widgets.CollapsedLayout>

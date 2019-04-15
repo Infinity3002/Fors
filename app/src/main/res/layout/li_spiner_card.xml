@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    tools:layout_marginTop="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Сбербанк"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/tvCard"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/tvCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="5455"
+        android:textColor="@color/_9b9b9b"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:srcCompat="@mipmap/ic_visa"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCard"
+        app:layout_constraintStart_toEndOf="@id/tvCard"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@+id/tvCard" />
+</android.support.constraint.ConstraintLayout>
